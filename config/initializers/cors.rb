@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
-        origins 'redux-saga-material-ui-sample.herokuapp.com', 'localhost:3000'
+        origins 'redux-saga-material-ui-sample.herokuapp.com', 'localhost:3000', 'express-with-react.herokuapp.com'
 
         resource '/api/v1/*',
             headers: :any,
